@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banti Kumar — Salesforce Developer</title>
+  
+  <!-- SEO Best Practices -->
+  <meta name="description" content="Portfolio of Banti Kumar - Salesforce Developer specializing in Apex, LWC, OmniStudio, and complex CRM solutions." />
+  <meta name="keywords" content="Salesforce Developer, LWC, Apex, OmniStudio, CRM, Banti Kumar" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Premium Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Banti<span class="grad-text">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeNav()">About</a></li>
+        <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+        <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeBtn" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span></span> Available for New Opportunities</div>
+        <h1 class="hero-name">
+          Building <span class="grad-text">Digital</span><br>Experiences
+        </h1>
+        <div class="hero-role">
+          <span class="typed" id="typed"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          Passionate Salesforce Developer crafting scalable CRM solutions — from complex Apex logic and Lightning Web Components to immersive intelligent automation flows.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            Explore Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline glass-btn">Get In Touch</a>
+        </div>
+        <div class="hero-stats glass-panel">
+          <div class="stat-item">
+            <div class="hero-stat-num">3+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="hero-stat-num">20+</div>
+            <div class="hero-stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="hero-stat-num">5+</div>
+            <div class="hero-stat-label">Certifications</div>
+          </div>
+          <div class="stat-item">
+            <div class="hero-stat-num">10+</div>
+            <div class="hero-stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div>SCROLL</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual fade-up">
+          <div class="about-card glass-panel-heavy">
+            <div class="about-card-inner">
+              <div class="about-avatar">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <div class="about-card-name">Banti Kumar</div>
+              <div class="about-card-role grad-text">Salesforce Developer</div>
+              <div class="about-badge-row">
+                <span class="chip blue">Apex</span>
+                <span class="chip purple">LWC</span>
+                <span class="chip red">Flows</span>
+              </div>
+            </div>
+            <div class="card-glow"></div>
+          </div>
+          <div class="float-badge fb-exp glass-panel">
+            <div class="num">3+</div>
+            <div>Years in Salesforce</div>
+          </div>
+          <div class="float-badge fb-loc glass-panel">
+            <div style="font-size:1.1rem;margin-bottom:2px">📍</div>
+            <div>India</div>
+          </div>
+        </div>
+        <div class="about-text fade-up" style="transition-delay:.15s">
+          <div class="section-label"><span class="line"></span> About Me</div>
+          <h2 class="section-title">Architecting Smarter CRM Solutions</h2>
+          <p>I'm a dedicated Salesforce Developer based in India with 3+ years of hands-on experience designing, developing, and deploying robust Salesforce solutions for diverse industries.</p>
+          <p>My expertise spans the full Salesforce ecosystem — writing clean, efficient Apex code, building sleek modern Lightning Web Components, architecting OmniStudio solutions, and engineering reliable integrations.</p>
+          <p>I believe in writing code that's not just functional, but scalable and maintainable, driving real business value through innovation.</p>
+          <div class="about-list">
+            <span class="chip">Apex / SOQL</span>
+            <span class="chip purple">LWC / Aura</span>
+            <span class="chip blue">OmniStudio</span>
+            <span class="chip red">Flows / Automation</span>
+            <span class="chip purple">REST / SOAP APIs</span>
+            <span class="chip blue">Data Cloud</span>
+            <span class="chip red">Salesforce CPQ</span>
+            <span class="chip">Git / CI-CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head fade-up">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">Core Technologies</h2>
+        <p class="section-desc">A premium blend of native Salesforce capabilities and scalable web development techniques.</p>
+      </div>
+      <div class="skills-grid fade-up stagger">
+        <div class="skills-col glass-panel" style="--i:0">
+          <div class="skills-col-title"><span class="icon">☁️</span> Salesforce Platform</div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-head"><span>Apex (Classes, Triggers, Batch)</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>Lightning Web Components</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>OmniStudio</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>Flows &amp; Automation</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>Data Cloud</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-col glass-panel" style="--i:1">
+          <div class="skills-col-title"><span class="icon">⚡</span> Development & Integration</div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-head"><span>REST / SOAP API Integrations</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="87"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>JavaScript / HTML / CSS</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>SOQL / SOSL</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>Salesforce CPQ</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-head"><span>Git &amp; CI/CD Pipeline</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-pct="82"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tools-grid fade-up stagger" style="--i:2">
+        <div class="tool-card glass-panel interactive" style="--i:0"><div class="tool-icon">☁️</div>Salesforce</div>
+        <div class="tool-card glass-panel interactive" style="--i:1"><div class="tool-icon">⚡</div>LWC</div>
+        <div class="tool-card glass-panel interactive" style="--i:2"><div class="tool-icon">🔵</div>OmniStudio</div>
+        <div class="tool-card glass-panel interactive" style="--i:3"><div class="tool-icon">🔗</div>Integrations</div>
+        <div class="tool-card glass-panel interactive" style="--i:4"><div class="tool-icon">🌊</div>Flows</div>
+        <div class="tool-card glass-panel interactive" style="--i:5"><div class="tool-icon">📊</div>Data Cloud</div>
+        <div class="tool-card glass-panel interactive" style="--i:6"><div class="tool-icon">🧩</div>CPQ</div>
+        <div class="tool-card glass-panel interactive" style="--i:7"><div class="tool-icon">🔧</div>Apex</div>
+        <div class="tool-card glass-panel interactive" style="--i:8"><div class="tool-icon">🐙</div>Git</div>
+        <div class="tool-card glass-panel interactive" style="--i:9"><div class="tool-icon">💻</div>VS Code</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head fade-up">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Solutions</h2>
+        <p class="section-desc">Solving real business challenges through meticulously scalable software architecture.</p>
+      </div>
+      <div class="projects-grid fade-up stagger">
+
+        <div class="project-card glass-panel" style="--i:0">
+          <div class="project-art" style="background: linear-gradient(135deg, rgba(0,212,255,0.2) 0%, rgba(124,109,250,0.05) 100%);">
+             <span class="project-icon">🏥</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Healthcare CRM Automation</h3>
+            <p class="project-desc">Engineered an end-to-end patient management system on Salesforce Health Cloud. Automated appointment orchestration and care plans using Flow, reducing manual admin work by 60%.</p>
+            <div class="project-tags">
+              <span class="tag">Health Cloud</span>
+              <span class="tag">Flows</span>
+              <span class="tag">LWC</span>
+            </div>
+            <div class="project-actions">
+               <a href="#" class="action-link">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel" style="--i:1">
+          <div class="project-art" style="background: linear-gradient(135deg, rgba(124,109,250,0.2) 0%, rgba(255,107,107,0.05) 100%);">
+             <span class="project-icon">🛒</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">B2B E-Commerce Integration</h3>
+            <p class="project-desc">Designed a robust bidirectional integration between Salesforce CPQ and a third-party ERP system using REST APIs and Platform Events. Real-time sync reduced processing errors by 45%.</p>
+            <div class="project-tags">
+              <span class="tag">CPQ</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Events</span>
+            </div>
+            <div class="project-actions">
+               <a href="#" class="action-link">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel" style="--i:2">
+          <div class="project-art" style="background: linear-gradient(135deg, rgba(255,107,107,0.2) 0%, rgba(255,168,107,0.05) 100%);">
+             <span class="project-icon">📡</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">OmniStudio Customer Portal</h3>
+            <p class="project-desc">Developed a premium self-service customer portal utilizing OmniStudio FlexCards and OmniScripts, elevating customer independence in managing support requests entirely without agent intervention.</p>
+            <div class="project-tags">
+              <span class="tag">OmniStudio</span>
+              <span class="tag">FlexCards</span>
+              <span class="tag">Apex</span>
+            </div>
+            <div class="project-actions">
+               <a href="#" class="action-link">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head fade-up">
+        <div class="section-label">Career Journey</div>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">A progressive timeline of engineering complex CRM solutions across enterprise sectors.</p>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item fade-up">
+          <div class="tl-dot">🚀</div>
+          <div class="tl-card glass-panel">
+            <div class="tl-head">
+              <div class="tl-role">Senior Salesforce Developer</div>
+              <span class="tl-period chip blue">2023 – Present</span>
+            </div>
+            <div class="tl-company grad-text">Tech Solutions Pvt. Ltd. — India</div>
+            <ul class="tl-list">
+              <li>Architected and delivered 8 enterprise Salesforce solutions across Healthcare and Retail sectors.</li>
+              <li>Spearheaded a team of 4 talented developers, enforcing rigid code quality through rigorous reviews.</li>
+              <li>Orchestrated OmniStudio logic reducing total customer agent handle time by 40%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item fade-up" style="transition-delay:.1s">
+          <div class="tl-dot">⚡</div>
+          <div class="tl-card glass-panel">
+            <div class="tl-head">
+              <div class="tl-role">Salesforce Developer</div>
+              <span class="tl-period chip purple">2021 – 2023</span>
+            </div>
+            <div class="tl-company grad-text">CloudBridge Technologies — India</div>
+            <ul class="tl-list">
+              <li>Devised and built 15+ highly performant Lightning Web Components for customized reporting.</li>
+              <li>Engineered complex Apex controllers, Batch jobs, and complex synchronous triggers seamlessly.</li>
+              <li>Integrated bidirectional REST APIs coupling Salesforce with SAP, Zendesk, and Stripe gateways.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME / CTA SECTION -->
+  <section id="resume">
+    <div class="container">
+      <div class="resume-box glass-panel-heavy fade-up">
+        <div class="resume-glow"></div>
+        <div class="resume-text">
+          <h3 class="grad-text">Digital Resume Available</h3>
+          <p>Download or view my formally structured CV highlighting deep technical proficiency and Salesforce certifications.</p>
+        </div>
+        <div class="resume-btns">
+          <!-- User upload directory target -->
+          <a href="./assets/ShrivastavBantiHitendraResume.PDF" target="_blank" class="btn btn-primary">
+            👁 View Resume
+          </a>
+          <!-- Provide download link -->
+          <a href="./assets/ShrivastavBantiHitendraResume.PDF" download class="btn btn-outline glass-btn">
+            ⬇ Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head fade-up">
+        <div class="section-label">Connect</div>
+        <h2 class="section-title">Let's Talk</h2>
+        <p class="section-desc">Looking to collaborate on a new Salesforce CRM architecture or complex integration?</p>
+      </div>
+      <div class="contact-grid">
+        <div class="fade-up">
+          <div class="contact-info-title">Drop me a message</div>
+          <p class="contact-info-desc">I specialize in scaling modern enterprise digital experiences. Open to freelance or full-time opportunities.</p>
+          <div class="contact-items">
+            <a href="mailto:banti.kumar@email.com" class="c-item glass-panel interactive">
+              <div class="c-icon">📧</div>
+              <div><span class="c-label">Email</span><span class="c-value">banti.kumar@email.com</span></div>
+            </a>
+            <div class="c-item glass-panel">
+              <div class="c-icon">📍</div>
+              <div><span class="c-label">Location</span><span class="c-value">India (Open to Remote)</span></div>
+            </div>
+            <a href="https://linkedin.com/in/bantikumar" target="_blank" class="c-item glass-panel interactive">
+              <div class="c-icon">💼</div>
+              <div><span class="c-label">LinkedIn</span><span class="c-value">linkedin.com/in/bantikumar</span></div>
+            </a>
+            <a href="https://github.com/bantikumar" target="_blank" class="c-item glass-panel interactive">
+              <div class="c-icon">🐙</div>
+              <div><span class="c-label">GitHub</span><span class="c-value">github.com/bantikumar</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form glass-panel fade-up" style="transition-delay:.15s">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input class="form-input" type="text" placeholder="John" id="fname" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input class="form-input" type="text" placeholder="Doe" id="lname" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="john@company.com" id="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Tell me about your project requirement..." id="message"></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="handleSubmit()">Send Message <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></button>
+          <div class="send-status" id="sendStatus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Message successfully sent!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner glass-panel">
+        <div class="footer-logo">Banti<span class="grad-text">.</span></div>
+        <div class="footer-socials">
+          <a href="#" class="social-btn glass-btn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" class="social-btn glass-btn" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="#" class="social-btn glass-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        </div>
+        <p class="footer-copy">© 2026 Banti Kumar. Powered by Salesforce & Built with ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+</body>
+</html>
